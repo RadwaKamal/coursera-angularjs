@@ -1,0 +1,70 @@
+body{
+    padding: 2em 5em;
+}
+h1, 
+p, 
+small{
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    letter-spacing: -0.04em;
+    position: relative;
+    text-align: center;
+}
+
+h1{
+    font-weight: 100;
+}
+
+:focus {outline:none;} ::-moz-focus-inner {border:0;}
+
+main {
+    overflow: hidden;
+}
+
+input{
+    width: 100%;
+    margin: 1.5em 0 0.5em;
+    padding: 1em;
+}
+
+small {
+    color: #575757;
+}
+
+button{
+    border: none;
+    background: #E2CFFC;
+    padding: 0.8em;
+    cursor: pointer;
+    width: 40%;
+}
+
+button:hover, button:focus{
+    background: #cdaff7;
+}
+
+p{
+    display: inline-block;
+    padding: 1em;
+}
+
+.error-border, 
+.success-border{
+    border: 0.1em solid transparent;
+    border-radius: 0.3em;
+}
+
+.error-border{
+    border-color: red;
+}
+
+.success-border{
+    border-color: #449909;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: #449909;
+}

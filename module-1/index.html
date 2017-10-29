@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <title>Lunch Checker</title>
+</head>
+<body ng-app="LunchCheck">
+    <h1>Lunch Checker</h1>
+    <main role="main" ng-controller="LunchCheckController">
+        <input ng-model="mealItems" 
+        ng-class="{'error-border': result.error, 'success-border': result.success}"
+        type="text" placeholder="Insert your lunch meal items seperated by ,">
+        <small>Empty items are not considered in count e.g. , ,</small><br>
+        <button ng-click="checkItems()">Check If Too Much</button>
+        <p ng-class="{error: result.error, success: result.success}">{{result.msg}}</p>
+    </main>
+</body>
+</html>
