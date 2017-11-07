@@ -1,0 +1,43 @@
+body{
+    padding: 2em 5em;
+}
+h1, 
+h2,
+h3,
+p, 
+li,
+small{
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    letter-spacing: -0.04em;
+    position: relative;
+    text-align: center;
+}
+h1,
+h2,
+h3{
+    font-weight: 100;
+}
+
+:focus {outline:none;} ::-moz-focus-inner {border:0;}
+
+main {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+li{
+    display: flex;
+    padding: 0.5em 0;
+}
+button{
+    border: none;
+    background: #E2CFFC;
+    padding: 0.2em 1em;
+    cursor: pointer;
+    margin-left: 1em;
+}
